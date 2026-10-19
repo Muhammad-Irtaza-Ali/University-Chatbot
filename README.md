@@ -15,6 +15,12 @@ A student-project prototype for finding cited passages in university documents. 
 
 This is a retrieval assistant, not a generative chatbot or a completed RAG system. It uses no external AI API and needs no paid model subscription.
 
+## Live browser demo
+
+[Try the document-search demo](https://muhammad-irtaza-ali.netlify.app/document-assistant/).
+
+The demo runs entirely in the browser and supports UTF-8 TXT and Markdown files up to 2 MB each. It uses a JavaScript implementation of keyword-based passage ranking. It does not upload document contents or use a generative AI service. PDF support remains available in the Python version below. The demo's source lives in the [portfolio repository](https://github.com/Muhammad-Irtaza-Ali/My_Portfolio/tree/main/document-assistant).
+
 ## Run locally
 
 Use Python 3.10 or newer:
@@ -47,7 +53,7 @@ python -m unittest discover -s tests -v
 python -m compileall -q app.py retrieval.py
 ```
 
-Core retrieval tests run without third-party dependencies. UI and PDF behavior additionally require installed packages and a manual run. No accuracy benchmark or deployment is claimed.
+Core retrieval tests run without third-party dependencies. UI and PDF behavior additionally require installed packages and a manual run. No accuracy benchmark is claimed. The Python/Streamlit application is not hosted; a separate browser-only text-search demo is available at the link below.
 
 ## Limitations
 
